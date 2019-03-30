@@ -1,0 +1,160 @@
+/*
+    Theme Name: IS 6120
+    Theme URI: 
+    Author: Sam Yap
+    Author URI:
+    Description: This theme is used for IS 6120 project.
+    Version: 1.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: gray;
+}
+
+/* Header */
+img.custom-logo {
+	width: 240px;
+	height: 80px;
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+header.page-header {
+	border-bottom: 1px solid gray;
+}
+
+/* Footer */
+footer.page-footer {
+	border-top: 1px solid gray;
+}
+
+/* Search Form */
+button.search-btn:focus {
+	padding: 10px 20px;
+}
+
+button.search-btn:focus {
+	box-shadow: 1px 1px 1px 1px gray;	
+}
+
+input.search-bar:focus {
+	box-shadow: 1px 1px 1px 1px gray;
+}
+
+/* Standard Nav Menu */
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav ul:before, .site-nav ul:after { content: ""; display: table; }
+.site-nav ul:after { clear: both; }
+.site-nav ul { *zoom: 1; }
+
+.site-nav ul li {
+	list-style: none;
+	text-align: center;
+}
+
+.site-nav ul li a:link,
+.site-nav ul li a:visited {
+	display: block;
+}
+
+/* Header Nav Menu */
+.site-header nav {
+	margin-top: 30px;
+}
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+	padding: 10px 17px;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+.site-header nav ul li a:hover {
+	box-shadow: 1px 1px 1px 1px silver;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited {
+	font-weight: bold;
+	border: 1px solid gray;
+}
+
+/* Footer Nav Menu */
+.site-footer nav {
+	margin: 30px 0 10px 0;
+}
+
+.site-footer nav ul li {
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px solid #DDD;
+}
+
+.site-footer nav ul li:last-of-type {
+	border-right: none;
+}
+
+/* Page Layout */
+article.post {
+	border-bottom: 1px dotted gray;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+article.post:last-of-type {
+	border-bottom: none;
+}
+
+article.page h2 {
+	font-size: 225%;
+	margin-bottom: 15px;
+}
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+div.image-column {
+	max-width: 30%;
+	width: 30%;
+	float: left;
+}
+
+div.content-column {
+	width: 60%;
+	float: right;
+}
+
+div.title-column {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+div.text-column {
+	font-weight: normal;
+	font-size: 14px;
+}
+
+@media ( max-width: 800px ) {
+	div.image-column {
+	   display:none;
+	}
+	div.content-column {
+		width: 100%;
+		float: none;
+	}
+}
